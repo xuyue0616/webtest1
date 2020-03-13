@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+<script type="text/javascript">
+    $(function(){
+        //为输入框绑定事件
+        $("#btn").click(function(){
+            //1、点击提交后获得输入框的内容
+            var name = $("#uname").val();
+            //AJAX回调(调用后台方法返回数据)
+            $.get("HelloAjax",{"uname":name},function(data){
+                alert(data);
+            })
+        })
+    })
+</script>
+</head>
+<body>
+    <input type="text" id="uname"><input id="btn" type="button" value="提交">
+</body>
+</html>
