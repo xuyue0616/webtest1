@@ -4,26 +4,35 @@
 
 <head>
 <style>
+	#img{
+		float: left;
+	}
+	#text{
+		width: 400px;
+		float:inherit;
+	}
 #header {
-    background-color:antiquewhite;
-    color:white;
+    background-color:blueviolet;
+    color:whitesmoke;
 	height:20%;
     text-align:center;
 	padding:5px;
 }
 #nav {
     line-height: 30px;
-    background-color:cornsilk;
-    height: 749px;
+    background-color:#D5B3E0;
+	color:blueviolet;
+    height: 355px;
+	width: 80px;
     float: left;
     padding: 5px;
 }
 #section {
-    float:left;
+    float:right;
     padding:10px;	 	 
 }
 #footer {
-    background-color:black;
+    background-color:#A0A0A0;
     color:white;
 	height:10%;
     clear:both;
@@ -33,20 +42,29 @@
 </style>
 </head>
 
-<body>
+<body bgcolor=#FDE3FF>
 
 <div id="header">
 <h1>Yue I Meng</h1>
 </div>
 
 <div id="nav">
-相册<br>
-记录<br>
-修建中<br>
+<a href="index.html">相册</a><br><br>
+<a href="index.html">记录</a><br><br>
+<a href="index.html">修建中</a><br>
 </div>
-
+<img src="love1.jpg" width="480" height="360" alt="loveimg">
 <div id="section">
-	<p><a href="love1.jpg"><img src="love1.jpg" width="960" height="720"></a></p>
+	<div id="img">
+		<p><a href="love1.jpg"></a></p>
+	</div>
+	<div id="text">
+		<h2>Love story</h2><br>
+		<h4>May the love be with you.</h4>
+		<h4>May the foce be with you. </h4>
+		<br>
+		<h4>home.</h4>
+	</div>
 </div>
 
 <div id="footer">
